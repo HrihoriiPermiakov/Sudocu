@@ -1,15 +1,8 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./components/app.js";
 
-const appElement = document.querySelector("#app");
-function App() {
-  const titleApp = <h1> Sudoku </h1>;
-  useEffect(() => {
-    const bodyElement = document.body;
-    bodyElement.style.backgroundColor = "blue";
-    bodyElement.style.color = "white";
-  }, []);
-  return titleApp;
-}
-
-ReactDOM.render(<App />, appElement);
+const root = createRoot(document.querySelector("#app"));
+root.render(<App />);

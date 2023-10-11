@@ -1,0 +1,7 @@
+#app {
+    width: 360px;
+    height: 640px;
+    background-color: #8b8a8a;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+}
