@@ -1,2 +1,4 @@
 @import 'reset-css';
-@import './style/styleApp.css'
+/* @import 'normalize.css'; */
+@import './style/base.css';
+@import './style/styleApp.css';

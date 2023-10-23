@@ -1,20 +1,15 @@
 import React from "react";
-// import Buttons from "../elements/buttons";
-import { Link } from "react-router-dom";
+import Button from "../elements/buttons";
+import Base from "../elements/baseScreen.js";
+// import { Link } from "react-router-dom";
 
-function HomeScreen() {
+const HomeScreen = () => {
   return (
-    <div className="container">
-      <h1>Гірський Судоку </h1>
-      <Link to="/type" className="btn btn__newGame">
-        Нова гра
-      </Link>
-
-      <Link to="#" className="btn btn__settings">
-        Налаштування
-      </Link>
-    </div>
+    <Base className="buttonBox">
+      <Button className="btn btnNewGame" text="Почати гру" link="/game" />
+      <Button className="btn btnSettigs" text="Налаштування" link="/settings" />
+    </Base>
   );
-}
+};
 
 export default HomeScreen;

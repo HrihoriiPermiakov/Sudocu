@@ -1,17 +1,17 @@
 import React from "react";
+import Base from "../elements/baseScreen.js";
+import Button from "../elements/buttons";
 
-function TypeGameScreen() {
+const TypeGameScreen = () => {
   return (
-    <div>
-      <h1> Гірський судоку </h1>
-      <h2> Вибери свій шлях </h2>
-      <div className="wraper wrapper__btn">
-        <button className="btn btn__clasikGame">Класична гра</button>
-
-        <button className="btn btn__companyGame">Компанія</button>
-      </div>
-    </div>
+    <Base className="buttonBox">
+      <h2>Вибери свій рівень</h2>
+      <Button className="btn " text="Початковий" />
+      <Button className="btn " text="Середній" />
+      <Button className="btn " text="Складний" />
+      <Button className="btn " text="Екстремальний" />
+    </Base>
   );
-}
+};
 
 export default TypeGameScreen;

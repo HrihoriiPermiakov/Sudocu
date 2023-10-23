@@ -1,7 +1,59 @@
 #app {
-    width: 360px;
-    height: 640px;
-    background-color: #8b8a8a;
+    width: 378.67px;
+    height: 658.67px;
+    background-color: #1E4620;
     margin: 0 auto;
-    border: 2px solid #ddd;
+    border: 10px solid #4465fa;
+    color: #AAAAAA;
+}
+
+
+.containerScreen {
+    /* padding-top: 10px; */
+    height: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+.buttonBox {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: block;
+    width: 120px;
+    height: 40px;
+    background-color: #808080;
+    /* background-color: #3498db; */
+    border-radius: 5%;
+    border: 1px solid #3498db;
+    text-align: center;
+    line-height: 40px;
+}
+
+.btnNewGame {
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.titleGame {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
